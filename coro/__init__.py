@@ -29,6 +29,14 @@ from .sync import (
 from .structured import TaskGroup, ExceptionGroup
 from .combinators import gather, race, wait_first
 from .dns import resolve as dns_resolve
+from .http import (
+    HTTPError,
+    HTTPRequest,
+    HTTPResponse,
+    HTTPClient,
+    HTTPServer,
+    logging_middleware,
+)
 
 __all__ = [
     "EventLoop",
@@ -59,4 +67,10 @@ __all__ = [
     "race",
     "wait_first",
     "dns_resolve",
+    "HTTPError",
+    "HTTPRequest",
+    "HTTPResponse",
+    "HTTPClient",
+    "HTTPServer",
+    "logging_middleware",
 ]
